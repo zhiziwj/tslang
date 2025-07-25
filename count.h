@@ -11,7 +11,7 @@ inline bool check_var(char x){
 	return false;
 }
 inline bool check_opa(char x){
-	if(x=='+'||x=='-'||x=='*'||x=='/'||x=='%'||x=='&'||x=='|'||x=='^'){
+	if(x=='+'||x=='-'||x=='*'||x=='/'||x=='%'||x=='&'||x=='|'||x=='^'||x=='>'||x=='<'||x=='='||x=='!'){
 		return true;
 	}
 	return false;
@@ -34,6 +34,14 @@ long long int connect(long long int a,char ch,long long int b){
 			return bool(a||b);
 		case '^':
 			return bool(a^b);
+		case '>':
+			return bool(a>b);
+		case '<':
+			return bool(a<b);
+		case '=':
+			return bool(a==b);
+		case '!':
+			return bool(a!=b);
 		default:
 			std::cout<<"wrong"<<std::endl; 
 	}
