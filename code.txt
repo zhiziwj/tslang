@@ -1,0 +1,8 @@
+a = 5 1 +
+b = a 3 *
+while b 0 >
+    output b
+    b = b 2 -
+endwhile
+output "Done"
+end
