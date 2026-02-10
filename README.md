@@ -19,3 +19,5 @@ while b 0 >
 endwhile
 output "Done"
 end
+
+# 当初练手用，已经停止活动
